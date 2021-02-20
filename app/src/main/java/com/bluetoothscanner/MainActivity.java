@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         bt_adapter = BluetoothAdapter.getDefaultAdapter();
         bt_enabling_intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
         bt_request_code = 1;
-
-        switchBluetoothOn();
+        bluetoothEnabler();
     }
 
     @Override
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private  void switchBluetoothOn () {
+    private  void bluetoothEnabler () {
         btn_on.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
