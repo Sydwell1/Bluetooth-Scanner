@@ -27,7 +27,23 @@ public class MainActivity extends AppCompatActivity {
         bt_adapter = BluetoothAdapter.getDefaultAdapter();
         bt_enabling_intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
         bt_request_code = 1;
+
         bluetoothEnabler();
+        bluetoothDisabler();
+    }
+
+    private void bluetoothDisabler() {
+        btn_off.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(bt_adapter.isEnabled()){
+                    bt_adapter.disable();
+                    Toast.makeText(getApplicationContext(), "Bluetooth is Disabled", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
     }
 
     @Override
