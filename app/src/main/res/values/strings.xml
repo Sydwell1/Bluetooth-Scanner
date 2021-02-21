@@ -2,5 +2,7 @@
     <string name="app_name">Bluetooth Scanner</string>
     <string name="bluetooth_on">Bluetooth On</string>
     <string name="bluetooth_off">Bluetooth Off</string>
-    <string name="scan_bluetooth_devices">Scan Bluetooth Devices</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="scan_available_devices">Scan Available Devices</string>
+    <string name="available_devices">Available Devices</string>
 </resources>
